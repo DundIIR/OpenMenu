@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/css/main-page.css">
 	<link rel="stylesheet" href="/css/login-sigin.css">
 	<title>Вход</title>
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<main class="main-login">
@@ -14,7 +15,7 @@
 		
 		<form class="form-login" action="https://echo.htmlacademy.ru/courses" method="get">
 			<input class="input-text" type="email" name="email" placeholder="Введите ваш email">
-			<input class="input-text" type="password" name="password" placeholder="Введите ваш пароль">
+			<input class="input-text" type="password" id="password-input" name="password" placeholder="Введите ваш пароль">
 			<label>
 				<input type="checkbox" class="visually-hidden input-icon-password">
 				<div class="icon-password"></div>
@@ -25,5 +26,14 @@
 		<a class="registration" href="sigin.html">зарегистрироваться</a>
 		<a class="forgot-password" href="forgot-password.html">Забыли пароль?</a>
 	</main>
+	<script>
+		$('body').on('click', '.input-icon-password', function(){
+			if ($(this).is(':checked')){
+				$('#password-input').attr('type', 'text');
+			} else {
+				$('#password-input').attr('type', 'password');
+			}
+		});
+	</script>
 </body>
 </html>

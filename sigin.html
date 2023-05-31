@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/css/main-page.css">
 	<link rel="stylesheet" href="/css/login-sigin.css">
 	<title>Вход</title>
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<main class="main-login">
@@ -18,7 +19,7 @@
 			<input class="input-text" type="email" name="email" placeholder="Email">
 			<input class="input-text" type="tel" name="phone" placeholder="Номер телефона">
 			<input class="input-text" type="text" name="name-institution" placeholder="Название заведения">
-			<input class="input-text" type="password" name="password" placeholder="Придумайте пароль">
+			<input class="input-text" type="password" name="password" id="password-input" placeholder="Придумайте пароль">
 			<label>
 				<input type="checkbox" class="visually-hidden input-icon-password">
 				<div class="icon-password"></div>
@@ -28,5 +29,14 @@
 
 		<a class="back-button" href="login.html">Назад</a>
 	</main>
+	<script>
+		$('body').on('click', '.input-icon-password', function(){
+			if ($(this).is(':checked')){
+				$('#password-input').attr('type', 'text');
+			} else {
+				$('#password-input').attr('type', 'password');
+			}
+		});
+	</script>
 </body>
 </html>
