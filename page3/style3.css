@@ -1,0 +1,123 @@
+
+header{
+    width: 100%;
+    background: black;
+    height: 50px;
+}
+
+.main{
+    font-family: Calibri, serif;
+    text-align: center;
+    color: gray;
+    display: flex;
+    justify-content: center; /* Расположение по горизонтали */
+    align-items: center; /* Расположение по вертикали */
+    height: 100%; /* Высота контейнера */
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    font-family: Calibri, serif;
+}
+
+.main a {
+    margin-right: 160px; /* Отступ между ссылками */
+}
+
+.oplata{
+    font-family: Calibri, serif;
+    text-align: center;
+    color: gray;
+    color: white;
+    background: blue;
+}
+
+.Text3{
+    font-family: Montserrat, serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-left: -40%;
+    margin-top: 5%;
+}
+
+.Text31{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-left: -31%;
+
+}
+
+.Text32{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-left: -37.5%;
+}
+.Text33{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-left: -32.5%;
+}
+.Text34{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-left: -36.5%;
+}
+.Text35{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-left: -37.2%;
+}
+.input{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    border: none;
+    outline: none;
+}
+.line{
+    height: 3px;
+    width: 800px;
+    background-color: black;
+    margin: 0 auto;
+}
+.help{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+}
+
+.image-button {
+    width: 30px; /* задайте нужные размеры кнопки */
+    height: 30px;
+    background-image: url('Frame.svg'); /* путь к вашему изображению */
+    background-repeat: no-repeat;
+    background-size: cover; /* или любое другое значение, чтобы изображение занимало всю площадь кнопки */
+    border: none; /* удаление границы кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    background-color: transparent;
+}
