@@ -1,0 +1,250 @@
+header{
+    width: 100%;
+    background: black;
+    height: 50px;
+}
+
+.main{
+    font-family: Calibri, serif;
+    text-align: center;
+    color: gray;
+    display: flex;
+    justify-content: center; /* Расположение по горизонтали */
+    align-items: center; /* Расположение по вертикали */
+    height: 100%; /* Высота контейнера */
+}
+.black_link{
+    color: inherit;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+}
+
+a:active {
+    font-family: Calibri, serif;
+}
+
+.main a {
+    margin-right: 160px; /* Отступ между ссылками */
+}
+.lineText{
+    font-family: Calibri, serif;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+.box{
+    display: flex;
+}
+.line1{
+    margin-left: 50%;
+}
+.line2 {
+    margin-right: 20px;
+    margin-left: 80%;
+    margin-top: -15%;
+}
+span {
+    white-space: nowrap;
+}
+.Add{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    margin-left: 5%;
+    line-height: 30px;
+}
+.txt{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 15px;
+    color: gray;
+    margin-left: 16%;
+}
+
+.line{
+    height: 1px;
+    width: 800px;
+    background-color: black;
+    margin-left: -0.5%;
+}
+.ContButt{
+    margin-left: 5%;
+}
+.Butt1{
+    opacity: 0.75;
+    border: 1px solid #4A4A4A;
+    border-radius: 50px  0  0 50px;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.Butt2{
+    background: none;
+    opacity: 0.75;
+    border: 1px solid #4A4A4A;
+    border-radius: 0  50px  50px 0;
+    width: 400px;
+    height: 50px;
+}
+
+.Butt1:hover {
+    background: none; /* Новый цвет фона при наведении */
+    color: black;
+    border: 1px solid #4A4A4A;
+}
+.Butt2:hover {
+    background: black; /* Новый цвет фона при наведении */
+    color: white;
+    border: none;
+    outline: none;
+}
+.top-ban{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: gray;
+    margin-left: 5%;
+    display: flex;
+}
+
+.mid-ban{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: gray;
+    margin-left: 5%;
+    display: flex;
+}
+.low-ban{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: gray;
+    margin-left: 5%;
+    display: flex;
+}
+.top{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.descr1{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: gray;
+    line-height: 30px;
+
+}
+
+.imgopen{
+    width: 250px; /* задайте нужные размеры кнопки */
+    height: 220px;
+    background-image: url('1bann.svg'); /* путь к вашему изображению */
+    background-repeat: no-repeat;
+    background-size: cover; /* или любое другое значение, чтобы изображение занимало всю площадь кнопки */
+    border: none; /* удаление границы кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    margin-left: 5%;
+    background-color: transparent;
+}
+
+.img2{
+    width: 250px; /* задайте нужные размеры кнопки */
+    height: 220px;
+    background-image: url('2bann.svg'); /* путь к вашему изображению */
+    background-repeat: no-repeat;
+    background-size: cover; /* или любое другое значение, чтобы изображение занимало всю площадь кнопки */
+    border: none; /* удаление границы кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    margin-left: 1.2%;
+    background-color: transparent;
+}
+
+.img3{
+    width: 250px; /* задайте нужные размеры кнопки */
+    height: 220px;
+    background-image: url('3bann.svg'); /* путь к вашему изображению */
+    background-repeat: no-repeat;
+    background-size: cover; /* или любое другое значение, чтобы изображение занимало всю площадь кнопки */
+    border: none; /* удаление границы кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    margin-left: 2%;
+    background-color: transparent;
+}
+.Butt3{
+    background: none;
+    text-align: center;
+    opacity: 0.75;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    width: 207px;
+    height: 50px;
+
+    transition: font-size 0.3s;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.Butt3:hover {
+    background: linear-gradient(45deg, #D9B6C8 15%, #C8C5F3 46%, #64BF95); /* Новый цвет фона при наведении */
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+.twobut{
+    margin-left: 13%;
+}
+
+.save{
+    background: darkgray;
+    text-align: center;
+    opacity: 0.75;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    width: 207px;
+    height: 50px;
+    margin-left: 12%;
+}
+
+.delete{
+    background: darkgray;
+    text-align: center;
+    opacity: 0.75;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    width: 207px;
+    height: 50px;
+    margin-left: 1%;
+}
+
+.help4{
+    font-family: Calibri, serif;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    margin-left: 13%;
+}
+
+.footr{
+    text-align: center;
+    margin-left: 35%;
+}
