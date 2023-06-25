@@ -1,0 +1,79 @@
+.header {
+	margin-bottom: 50px;
+}
+
+.main {
+	display: block;
+	margin-bottom: 50px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+}
+
+.inner-header {
+	display: flex;
+	border-bottom: 1px solid #CCC;
+	padding: 9px 0;
+}
+
+.input-search {
+
+	width: 172px;
+	height: 33px;
+	padding-left: 11px;
+	margin-right: 5px;
+
+	font-family: "TT Norms Pro", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: lowercase;
+
+	border-radius: 5px;
+	border: 1px solid #CCC;
+}
+
+.button-download {
+	cursor: pointer;
+
+	width: 36px;
+	height: 33px;
+
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	background: #FFF;
+
+	background: url("/img/account/download-point.svg") no-repeat center;
+
+}
+
+.button-download:hover {
+	border: 2px solid #000;
+}
+
+.inner-content {
+	flex-grow: 1;
+	display: flex;
+}
+
+.category-list-main {
+	flex-grow: 1;
+	border-right: 1px solid #CCC;
+
+	
+}
+
+.category-item {
+	padding: 12px 5px 12px;
+}
+
+.category-list-inner .category-item {
+	padding-left: 5px;
+}
+
+.form-create {
+	width: 450px;
+}
