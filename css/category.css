@@ -13,12 +13,16 @@
 
 .inner-header {
 	display: flex;
+	align-items: center;
 	border-bottom: 1px solid #CCC;
-	padding: 9px 0;
+	padding-bottom: 9px;
+}
+
+.form-search {
+	display: flex;
 }
 
 .input-search {
-
 	width: 172px;
 	height: 33px;
 	padding-left: 11px;
@@ -28,10 +32,44 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 22px;
-	text-transform: lowercase;
+
 
 	border-radius: 5px;
 	border: 1px solid #CCC;
+}
+
+.input-visibility {
+	width: 200px;
+	height: 33px;
+	border-radius: 6px;
+	padding: 0 10px;
+	margin-right: 5px;
+
+	font-family: "TT Norms Pro", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #808080;
+	text-transform: none;
+	border: 1px solid #CCC;
+}
+
+.input-visibility:focus {
+	border: 2px solid #000;
+}
+
+.selection-visibility {
+	position: relative;
+}
+
+.selection-visibility::after {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 31px;
+	right: 6px;
+	top: 1px;
+	background: url("/img/account/select.svg") no-repeat center;
 }
 
 .button-download {
@@ -67,6 +105,7 @@
 .category-item {
 	text-transform: none;
 	padding: 7px;
+	color: #666;
 	border-bottom: 1px dotted #CCC;
 	margin: 0 3px;
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Меню</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/category.css">
+	<link rel="stylesheet" href="/css/position.css">
+	<script src="/js/add-image.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="navigation">
+      <a class="logo" href="index.html">
+        <img src="/img/logo.svg" width="100" height="30" alt="OpenMenu">
+      </a>
+
+      <ul class="user-menu navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="">что нового</a>
+        </li>
+        <li class="navigation-item">
+					<a class="navigation-link" href="category.html">меню</a>
+				</li>
+				<li class="navigation-item">
+					<a class="navigation-link" href="">настройки</a>
+				</li>
+      </ul>
+    </nav>
+	</header>
+	<main class="main">
+		<div class="main-container">
+			<div class="inner-header">
+				<form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get" enctype="multipart/form-data">
+					<input class="input-search" type="text" name="text-search" placeholder="Поиск...">
+					<div class="selection-visibility">
+						<select class="input-visibility" name="visibility-displayed">
+							<option value="" disabled selected>Видимость в меню</option>
+							<option value="all">Все</option>
+							<option value="displayed">Отображается</option>
+							<option value="hidden">Скрыта</option>
+						</select>
+					</div>
+					<div class="selection-visibility">
+						<select class="input-visibility" name="visibility-category">
+							<option value="" disabled selected>Категория</option>
+							<option value="all">Все</option>
+							<option value="основная">Основная</option>
+							<option value="салаты">Салаты</option>
+							<option value="горячее">Горячее</option>
+							<option value="десерты">Десерты</option>
+						</select>
+					</div>
+				</form>
+				<button class="button-download"></button>
+			</div>
+			<div class="inner-content">
+				<ul class="position-list-main">
+					<ul class="position-list ">
+						<li class="position-item">Позиция</li>
+						<li class="position-item">Категория</li>
+						<li class="position-item">Цена</li>
+						<li class="position-item">Видимость в меню</li>
+					</ul>
+					<ul class="position-list">
+						<li class="position-item">Цезарь</li>
+						<li class="position-item">Салаты</li>
+						<li class="position-item">350 &#8381;</li>
+						<li class="position-item">Отображается</li>
+					</ul>
+					<ul class="position-list">
+						<li class="position-item">Нисуаз</li>
+						<li class="position-item">Салаты</li>
+						<li class="position-item">400 &#8381;</li>
+						<li class="position-item">Отображается</li>
+					</ul>
+				</ul>
+				<form class="create-category form-create" action="https://echo.htmlacademy.ru/courses" method="get">
+					<div class="image-upload">
+						<!-- <label for="upload-input">
+							<div class="upload-icon"></div>
+							<input id="upload-input" type="file" name="image" accept="image/*" />
+						</label> -->
+					</div>
+					
+					<input class="input-position-name" type="text" name="position-name" placeholder="Название позиции" required>
+					<input class="input-position-price" type="text" name="position-price" placeholder="Название позиции" required>
+					
+					<label class="selection-category">Категория:
+						<select class="input-category-name" name="category-name">
+							<option value="Основная">Основная</option>
+							<option value="Салаты">Салаты</option>
+							<option value="Горячее">Горячее</option>
+							<option value="Пицца">Пицца</option>
+							<option value="Десерты">Десерты</option>
+						</select>
+					</label>
+					<textarea class="position-description" name="position-description" placeholder="Описание позиции"></textarea>
+					p.
+					<div class="form-button">
+						<input class="button-save" type="submit" value="сохранить">
+					<input class="button-delete" type="submit" value="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<ul class="footer-list">
+			<li class="footer-item">
+				<a class="footer-link" href="">предложить идею</a>
+			</li>
+			<li class="footer-item">
+				<a class="footer-link" href="">написать в поддержку</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
