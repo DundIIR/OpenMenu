@@ -38,23 +38,37 @@
 			</div>
 			<div class="inner-content">
 				<ul class="category-list-main">
-					<li class="category-item">Салаты</li>
+					<li class="category-item" onclick="alert('click');">Салаты</li>
 					<li class="category-item">Горячее</li>
-					<li class="category-item">
-						Пицца
-						<ul class="category-list-inner category-item">
-							<li class="category-item">На тонком тесте</li>
-							<li class="category-item">На толстом тесте</li>
-						</ul>
-					</li>
-					<li class="category-item">
-						Десерты
-						<ul class="category-list-inner category-item">
+					<li class="category-item">Пицца</li>
+					<ul class="category-list-inner">
+						<li class="category-item">На тонком тесте</li>
+						<li class="category-item">На толстом тесте</li>
+						<ul class="category-list-inner">
 							<li class="category-item">Мороженное</li>
+							<ul class="category-list-inner">
+								<li class="category-item">Мороженное</li>
+								<li class="category-item">Выпечка</li>
+								<li class="category-item">Торты</li>
+							</ul>
 							<li class="category-item">Выпечка</li>
 							<li class="category-item">Торты</li>
 						</ul>
-					</li>
+					</ul>
+					<li class="category-item">Десерты</li>
+					<ul class="category-list-inner">
+						<li class="category-item">Мороженное</li>
+						<li class="category-item">Выпечка</li>
+						<li class="category-item">Торты</li>
+					</ul>
+					<li class="category-item">Десерты</li>
+					<li class="category-item">Десерты</li>
+					<li class="category-item">Десерты</li>
+					<ul class="category-list-inner">
+						<li class="category-item">Мороженное</li>
+						<li class="category-item">Выпечка</li>
+						<li class="category-item">Торты</li>
+					</ul>
 				</ul>
 				<form class="create-category form-create" action="https://echo.htmlacademy.ru/courses" method="get">
 					<input class="input-category-name" type="text" name="name-category" placeholder="Название категории" required>
@@ -67,8 +81,10 @@
 							<option value="Десерты">Десерты</option>
 						</select>
 					</label>
-					<input type="submit" value="сохранить">
-					<input type="submit" value="удалить">
+					<div class="form-button">
+						<input class="button-save" type="submit" value="сохранить">
+					<input class="button-delete" type="submit" value="">
+					</div>
 				</form>
 			</div>
 		</div>

@@ -1,16 +1,14 @@
+
 .header {
-	margin-bottom: 50px;
+	margin-bottom: 0;
 }
 
 .main {
-	display: block;
-	margin-bottom: 50px;
+	display: flex;
 }
 
 .main-container {
-	display: flex;
-	flex-direction: column;
-	height: 500px;
+	margin: auto;
 }
 
 .inner-header {
@@ -55,25 +53,144 @@
 }
 
 .inner-content {
-	flex-grow: 1;
+
 	display: flex;
+	height: 65vh;
 }
 
 .category-list-main {
 	flex-grow: 1;
 	border-right: 1px solid #CCC;
-
-	
+	overflow: auto;
 }
 
 .category-item {
-	padding: 12px 5px 12px;
+	text-transform: none;
+	padding: 7px;
+	border-bottom: 1px dotted #CCC;
+	margin: 0 3px;
 }
 
-.category-list-inner .category-item {
-	padding-left: 5px;
+.category-item:hover {
+	background-color: rgb(245, 245, 245);
+	cursor: pointer;
+}
+
+.category-list-inner > .category-list-inner {
+	margin-left: 30px;
+}
+
+.category-list-inner > .category-item{
+	margin-left: 30px;
 }
 
 .form-create {
+	padding: 20px 10px;
 	width: 450px;
+}
+
+.form-create > input {
+	font-family: "TT Norms Pro", sans-serif;
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.input-category-name {
+	width: 410px;
+	height: 33px;
+	padding: 0 11px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 1px solid #CCC;
+}
+
+.input-category-name::placeholder {
+	font-family: "TT Norms Pro", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.selection-category {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 410px;
+	letter-spacing: 0.1px;
+	font-size: 13px;
+	text-transform: none;
+}
+
+.input-category-main {
+	width: 318px;
+	height: 33px;
+	border-radius: 4px;
+	padding: 0 10px;
+
+	font-family: "TT Norms Pro", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 22px;
+	color: #333;
+
+	border: 1px solid #CCC;
+}
+
+.selection-category::after {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 31px;
+	right: 1px;
+	top: 1px;
+	background: url("/img/account/select.svg") no-repeat center;
+}
+
+.form-button {
+	margin-top: 20px;
+	width: 410px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button-save, .button-delete {
+	cursor: pointer;
+	width: 360px;
+	height: 40px;
+
+	font-family: "TT Norms Pro", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.6px;
+	font-size: 15px !important;
+
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #000;
+	border-radius: 8px;
+	opacity: 0.85;
+	transition: all .2s ease-in-out;
+}
+
+.button-save:hover {
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.95;
+}
+
+.button-delete {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: url("/img/account/delete.svg") no-repeat center;
+}
+
+.button-delete:hover {
+	border: 1px solid #fff;
+	background: url("/img/account/delete-white.svg") no-repeat center;
+	background-color: #000;
+	transition: all .2s ease-in-out;
 }
