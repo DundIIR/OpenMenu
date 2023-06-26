@@ -44,7 +44,7 @@
             <div class="wrapper">
                 <div class="buttons_wrapper">
                     <div class="buttons_title">
-                        <a href="#!" class="buttons_link">меню / позиции</a>
+                        <a href="#!" class="buttons_link">электронное меню</a>
                     </div>
                     <nav class="buttons_nav">
                         <ul class="buttons_list">
@@ -76,98 +76,88 @@
             </div>
         </section>
 
-        <section class="create_dishes">
+       
+        <section class="name_input_sect">  
             <div class="wrapper">
-                <!-- <div class="create_dishes_wrapper">
-                    <input type="text" class="search_dish" placeholder="Поиск.."> 
-                    <select class="visible_list"> 
-                        <option class="type_text_list" value="visible">Отображается</option>
-                        <option class="type_text_list" value="hidden">Скрыто</option> 
-                        <option class="type_text_list" value="all">Всё</option>
-                    </select> 
-                    <select class="category_list"> 
-                        <option class="type_text_list" value="1">Категория 1</option> 
-                        <option class="type_text_list" value="2">Категория 2</option> 
-                    </select> 
-                    <button id="openModal" class="create_button">создать позицию</button>
-                </div> -->
+                <h1 class="name_input_title">
+                    Ознакомьтесь с <a href="#1" class="our_base_link">нашей статьей в базе знаний</a>, если у вас возникли вопросы по созданию электронного меню.
+                </h1>
+                <p class="title_input_name" >Адрес электронного меню:</p>
+                <input type="text" class="menu-link" value="menu.openmenu.com/">
+                <p class="under_input_address" >Ссылка на ваше заведение</p>
 
-                <form class="create_form">
-                    <fieldset class="create_form_wrap">
-                        <p class="create_form_info">
-                            <input type="text" class="search_dish" placeholder="Поиск..">
-                            <select class="visible_list"> 
-                                <option class="type_text_list" value="visible">Отображается</option>
-                                <option class="type_text_list" value="hidden">Скрыто</option> 
-                                <option class="type_text_list" value="all">Всё</option>
-                            </select> 
-                            <select class="category_list"> 
-                                <option class="type_text_list" value="1">Категория 1</option> 
-                                <option class="type_text_list" value="2">Категория 2</option> 
-                            </select> 
-                            <button id="openModal" type="submit" class="create_button">создать позицию</button>
-                        </p>
-                    </fieldset>
-                </form>
-
+                <p class="title_input_name" >Название заведения:</p>
+                <input type="text" class="name_rest">
+                <p class="under_input_name">Название будет на заголовке</p>
             </div>
         </section>
 
-        <section class="table_dishes">
+        <section class="logo_input">
             <div class="wrapper">
-                <table class="head_table">
-                    <thead>
-                        <tr>
-                            <th class="head_table_pos">Позиция</th>
-                            <th class="head_table_categ">Категория</th>
-                            <th class="head_table_prise">Цена</th>
-                            <th class="head_table_vis">Видимость</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td> 
-			                <td>Категория 1</td> 
-                            <td>1000</td>
-                            <td>Есть</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <div class="modal-content">
-                        <form action="#" method="post">
-                            <input class="characteristics" placeholder="Название позиции">
-                            <input class="characteristics" placeholder="Цена">
-
-                            <select class="characteristics"> 
-                                <option class="type_text_list" value="1">Категория 1</option> 
-                                <option class="type_text_list" value="2">Категория 2</option> 
-                            </select> 
-                                
-                            <select class="characteristics"> 
-                                <option class="type_text_list" value="visible">Отображается</option>
-                                <option class="type_text_list" value="hidden">Скрыто</option> 
-                            </select> 
-                            <input class="characteristics" type="file" id="image" name="image">
-                            <textarea class="characteristics" placeholder="Введите описание"></textarea>
-                            <button type="s" class="add_button">Добавить</button>
-                            
-    
-                        </form>
+                <h2 class="logo_input_title">Логотип</h2>
+                <div class="logo_container">
+                    <div class="logo_preview"></div>
+                    <input type="file" class="logo_upload" accept="image/*">
+                    <div class="logo_controls">
+                        <button class="change_logo" type="submit">Изменить</button>
+                        <button class="delete_logo" type="submit">Удалить</button>
                     </div>
                 </div>
-
-
-
+            </div>
+        </section>
         
 
+        <section class="settings_change">
+            <div class="wrapper">
+                <h3 class="settings_change_title">Настройки меню<h3>
+                    <div class="sort_container">
+                        <div class="sort_text_сont">
+                          <p class="sort_text">Сортировать позиции по категориям</p>
+                          <p class="under_sort_text">Товары будут разделены по категориям</p>
+                        </div>
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    
+                    <div class="cart_container">
+                        <div class="cart_text_сont">
+                            <p class="cart_text">Показывать корзину</p>
+                            <p class="under_cart_text">Гость сможет добавить позиции в заказ</p>
+                          </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+            </div>
+        </section>
+        
+
+        
+        <section class="QR_code_create">
+            <div class="wrapper">
+                <h4 class="QR_code_title">QR-код</h4>
+                <p class="QR_code_subtitle">Распечатайте и разместите этот QR-код на столах в заведении — гости смогут просканировать его камерой смартфона, чтобы открыть меню.</p>
+                <div class="QR_container">
+                    <img src="/img/svg/qr_example.svg" alt="QR_code_pic" class="image">
+                    <div class="QR_controls">
+                        <button onclick="window.location.href='#!'" download>Скачать картинку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="save_menu">
+            <div class="wrapper">
+                <h5 class="save_menu_title">Создание и изменение электронного меню может занимать несколько минут</h5>
+                <button class="button_go_to_menu"><a class="link_go_to_menu" href="#!">Перейти к меню</a></button>
+                <button class="button_save_menu"><a class="link_save_menu" href="https://google.com" target="_blank" >Сохранить</a></button>
             </div>
         </section>
 
-        
-        
     </main>
 
 
@@ -199,25 +189,6 @@
     </footer>
 
 
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("openModal");
-        var closeBtn = document.getElementsByClassName("close")[0];
-    
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-    
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-    
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 
     <script>
         const buttonsItems = document.querySelectorAll('.buttons_item');
