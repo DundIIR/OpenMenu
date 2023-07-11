@@ -69,7 +69,7 @@
 	height: 31px;
 	right: 6px;
 	top: 1px;
-	background: url("/img/account/select.svg") no-repeat center;
+	background: url("img/account/select.svg") no-repeat center;
 }
 
 .button-download {
@@ -82,7 +82,7 @@
 	border: 1px solid #CCC;
 	background: #FFF;
 
-	background: url("/img/account/download-point.svg") no-repeat center;
+	background: url("img/account/download-point.svg") no-repeat center;
 
 }
 
@@ -185,7 +185,7 @@
 	height: 31px;
 	right: 1px;
 	top: 1px;
-	background: url("/img/account/select.svg") no-repeat center;
+	background: url("img/account/select.svg") no-repeat center;
 }
 
 .form-button {
@@ -224,12 +224,12 @@
 	width: 40px;
 	height: 40px;
 	padding: 0;
-	background: url("/img/account/delete.svg") no-repeat center;
+	background: url("img/account/delete.svg") no-repeat center;
 }
 
 .button-delete:hover {
 	border: 1px solid #fff;
-	background: url("/img/account/delete-white.svg") no-repeat center;
+	background: url("img/account/delete-white.svg") no-repeat center;
 	background-color: #000;
 	transition: all .2s ease-in-out;
 }

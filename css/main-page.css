@@ -5,8 +5,8 @@
 	font-weight: 400;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Regular.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Regular.woff") format("woff");
+	src: url("fonts/TTNormsPro-Regular.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
 	font-weight: 500;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Medium.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Medium.woff") format("woff");
+	src: url("fonts/TTNormsPro-Medium.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -27,8 +27,8 @@
 	font-weight: 300;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Light.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Light.woff") format("woff");
+	src: url("fonts/TTNormsPro-Light.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Light.woff") format("woff");
 }
 
 *,
@@ -251,7 +251,7 @@ body {
 	margin-bottom: 20px;
 	padding-left: 30px;
 
-	background-image: url("/img/sqr-icon.svg");
+	background-image: url("img/sqr-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center left;
 	background-size: 24px 25px;
@@ -437,7 +437,7 @@ ul .advantages-description {
 	width: 1280px;
 	height: 25px;
 
-	background: url("/img/line-arrow.svg") no-repeat;
+	background: url("img/line-arrow.svg") no-repeat;
 }
 
 .manual-subject {
@@ -517,7 +517,7 @@ ul .advantages-description {
 	width: 8px;
 	height: 14px;
 
-	background: url("/img/faq-arrow.svg") no-repeat center center;
+	background: url("img/faq-arrow.svg") no-repeat center center;
 	transform: translateY(-40%);
 }
 
@@ -540,7 +540,7 @@ ul .advantages-description {
 	display: flex;
 	height: 285px;
 	
-	background: url("/img/footer-logo.svg") no-repeat center right 18%;
+	background: url("img/footer-logo.svg") no-repeat center right 18%;
 	color: #fff;
 	background-color: #000;
 }

@@ -5,8 +5,8 @@
 	font-weight: 400;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Regular.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Regular.woff") format("woff");
+	src: url("fonts/TTNormsPro-Regular.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
 	font-weight: 500;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Medium.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Medium.woff") format("woff");
+	src: url("fonts/TTNormsPro-Medium.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -27,8 +27,8 @@
 	font-weight: 300;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Light.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Light.woff") format("woff");
+	src: url("fonts/TTNormsPro-Light.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Light.woff") format("woff");
 }
 
 *,
