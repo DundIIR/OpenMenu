@@ -5,8 +5,8 @@
 	font-weight: 400;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Regular.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Regular.woff") format("woff");
+	src: url("fonts/TTNormsPro-Regular.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
 	font-weight: 500;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Medium.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Medium.woff") format("woff");
+	src: url("fonts/TTNormsPro-Medium.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -27,8 +27,8 @@
 	font-weight: 300;
 	font-display: swap;
 
-	src: url("/fonts/TTNormsPro-Light.woff2") format("woff2");
-	src: url("/fonts/TTNormsPro-Light.woff") format("woff");
+	src: url("fonts/TTNormsPro-Light.woff2") format("woff2");
+	src: url("fonts/TTNormsPro-Light.woff") format("woff");
 }
 
 *,
@@ -122,17 +122,6 @@ body {
 	width: 100%;
 }
 
-/* .button-arrow:hover .arrow-icon path {
-	stroke-dasharray: 1500;
-	stroke-dashoffset: 1500;
-	animation: draw 10s linear forwards;
-}
-@keyframes draw {
-	100% {
-		stroke-dashoffset: 0;
-	}
-} */
-
 /* Header */
 
 .logo {
@@ -192,15 +181,22 @@ body {
 	padding: 0;
 }
 
+.main-title {
+	margin: 0 0 42px;
+
+	max-width: 500px;
+	
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 85px;
+	text-align: left;
+}
+
 /* Page Description */
 
 .page-description {
 	display: flex;
 	margin-bottom: 156px;
-}
-
-.main-title {
-	margin: 0 0 42px;
 }
 
 .container-description {
@@ -216,15 +212,6 @@ body {
 .buttons-container {
 	display: flex;
 	justify-content: flex-start;
-}
-
-.main-title {
-	max-width: 500px;
-	
-	font-weight: 500;
-	font-size: 72px;
-	line-height: 85px;
-	text-align: left;
 }
 
 /* Inner Adventages List */
@@ -251,7 +238,7 @@ body {
 	margin-bottom: 20px;
 	padding-left: 30px;
 
-	background-image: url("/img/sqr-icon.svg");
+	background-image: url("../img/sqr-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center left;
 	background-size: 24px 25px;
@@ -277,7 +264,6 @@ body {
 	align-items: center;
 	justify-content: space-around;
 }
-
 
 .inner-container {
 	display: flex;
@@ -437,7 +423,7 @@ ul .advantages-description {
 	width: 1280px;
 	height: 25px;
 
-	background: url("/img/line-arrow.svg") no-repeat;
+	background: url("../img/line-arrow.svg") no-repeat;
 }
 
 .manual-subject {
@@ -517,7 +503,7 @@ ul .advantages-description {
 	width: 8px;
 	height: 14px;
 
-	background: url("/img/faq-arrow.svg") no-repeat center center;
+	background: url("../img/faq-arrow.svg") no-repeat center center;
 	transform: translateY(-40%);
 }
 
@@ -540,7 +526,7 @@ ul .advantages-description {
 	display: flex;
 	height: 285px;
 	
-	background: url("/img/footer-logo.svg") no-repeat center right 18%;
+	background: url("../img/footer-logo.svg") no-repeat center right 18%;
 	color: #fff;
 	background-color: #000;
 }
@@ -549,7 +535,6 @@ ul .advantages-description {
 	display: flex;
 	margin: auto;
 	width: 1200px;
-	
 }
 
 .wrapper {
@@ -571,7 +556,6 @@ ul .advantages-description {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-
 .footer-item {
 	margin-bottom: 16px;
 }
@@ -585,4 +569,32 @@ ul .advantages-description {
 	color: inherit;
 	background-color: #000;
 	border-radius: 7px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+	border: 1px solid #CCC
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: #CCC;
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
 }

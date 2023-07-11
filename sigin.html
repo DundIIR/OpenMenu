@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/main-page.css">
-	<link rel="stylesheet" href="/css/login-sigin.css">
-	<title>Вход</title>
+	<link rel="stylesheet" href="css/main-page.css">
+	<link rel="stylesheet" href="css/login-sigin.css">
+	<title>Регистрция</title>
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<main class="main-login">
-		<a class="logo-login" href="index.html"><img src="/img/login/logo.svg" width="300" height="100" alt="OpenMenu"></a>
+		<a class="logo-login" href="index.html"><img src="img/login/logo.svg" width="300" height="100" alt="OpenMenu"></a>
 		<p class="text-empty">Расскажите о себе, чтобы нам было проще работать вместе</p>
 
 		<form class="form-login" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -18,7 +19,7 @@
 			<input class="input-text" type="email" name="email" placeholder="Email">
 			<input class="input-text" type="tel" name="phone" placeholder="Номер телефона">
 			<input class="input-text" type="text" name="name-institution" placeholder="Название заведения">
-			<input class="input-text" type="password" name="password" placeholder="Придумайте пароль">
+			<input class="input-text" type="password" name="password" id="password-input" placeholder="Придумайте пароль">
 			<label>
 				<input type="checkbox" class="visually-hidden input-icon-password">
 				<div class="icon-password"></div>
@@ -28,5 +29,14 @@
 
 		<a class="back-button" href="login.html">Назад</a>
 	</main>
+	<script>
+		$('body').on('click', '.input-icon-password', function(){
+			if ($(this).is(':checked')){
+				$('#password-input').attr('type', 'text');
+			} else {
+				$('#password-input').attr('type', 'password');
+			}
+		});
+	</script>
 </body>
 </html>
